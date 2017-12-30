@@ -1,26 +1,11 @@
+#!/usr/bin/python
+
 import argparse
 import datetime
 import json
 import os
 import shutil
 import sys
-
-
-"""
-JOURNAL FORMAT (JSON)
-
-{
-    "patient": "Patient name"
-    "journal": [{
-        date": "MM-DD-YYYY",
-        "symptoms": [{
-            "name": "Symptom name"
-            "value": 0-10
-        }],
-        "note": "notable items from the day"
-    }]
-}
-"""
 
 
 DATE_FORMAT = '%m-%d-%Y'

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import argparse
 import datetime
 import json
@@ -181,7 +183,6 @@ def main():
 
     if args.plot:
         store_report_plot(report_plot_data, args.reports, report_name)
-
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 # Daily Symptom Journal
-> Logging and reporting symptoms
+Daily symptom logging and reporting.
 
 # Purpose
 In dealing with chronic illness, it's incredibly helpful to have a clinical understanding of how your most prominent symptoms shift over time. This tool helps to track those symptoms and their severity, and provides the ability to export your data.
@@ -43,12 +43,11 @@ Journal, archive, and reports are all gitignored - data is never sync'ed.
 
 ## Structure
 ```json
-
 {
     "patient": "Patient name",
     "journal": [
         {
-            date": "mm-dd-yyyy",
+            "date": "mm-dd-yyyy",
             "symptoms": [{
                 "name": "Symptom name",
                 "value": 5

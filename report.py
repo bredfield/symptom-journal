@@ -117,11 +117,16 @@ def store_report_plot(report_plot_data, report_dir, report_name):
     date_format = mdates.DateFormatter(DATE_FORMAT)
     ax.xaxis.set_major_formatter(date_format)
 
+    # set y axis range
+    ax.set_ylim([0, 10])
+    ax.locator_params(axis='y', nbins=10)
+
     # plot each symptom
     for symptom_name, symptom_data in report_plot_data.iteritems():
         plt.plot([p[0] for p in symptom_data], [p[1] for p in symptom_data], label=symptom_name)
 
     plt.legend()
+
 
     # store figure
     fig.set_size_inches(18.5, 10.5)
